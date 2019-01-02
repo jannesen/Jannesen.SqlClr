@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data.SqlTypes;
 using System.Globalization;
 
@@ -94,8 +94,7 @@ namespace Jannesen.SqlClr
                     }
                 }
                 else {
-                    switch(fieldpos)
-                    {
+                    switch(fieldpos) {
                     case 0: // year
                     case 1: // month
                         if (chr!='-') goto invalid_date;
