@@ -87,10 +87,10 @@ namespace Jannesen.SqlClr
         }
         public      static      IDate                   Parse(SqlString value)
         {
-                if (value.IsNull || string.IsNullOrEmpty(value.Value))
-                    return Null;
+            if (value.IsNull || string.IsNullOrEmpty(value.Value))
+                return Null;
 
-                return  parse(value.Value);
+            return  InternalParse(value.Value);
         }
         public      static      IDate                   Date(Int32 year, Int32 month, Int32 day)
         {
@@ -106,7 +106,7 @@ namespace Jannesen.SqlClr
             return (n.IsNull || v == NullValue) ? Null : new IDate(v + n.Value);
         }
 
-        internal    static      IDate                   parse(string value)
+        internal    static      IDate                   InternalParse(string value)
         {
             if (string.IsNullOrEmpty(value))
                 return Null;

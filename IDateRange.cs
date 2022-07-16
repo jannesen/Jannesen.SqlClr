@@ -52,7 +52,7 @@ namespace Jannesen.SqlClr
             if (parts.Length != 2)
                 throw new FormatException("Invalid daterange string.");
 
-            return new IDateRange(IDate.parse(parts[0]), IDate.parse(parts[1]));
+            return new IDateRange(IDate.InternalParse(parts[0]), IDate.InternalParse(parts[1]));
         }
         public      static      IDateRange              Range(IDate begin, IDate end)
         {

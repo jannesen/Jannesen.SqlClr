@@ -7,3 +7,15 @@ indent_style = space
 indent_size = 4
 trim_trailing_whitespace = true
 
+[*.cs]
+# IDE1006: Naming Styles
+dotnet_diagnostic.IDE1006.severity = none
+
+# CA1014: Mark assemblies with CLSCompliant
+dotnet_diagnostic.CA1014.severity = none
+
+# CA1720: Identifier 'Int' contains type name
+dotnet_diagnostic.CA1720.severity = none
+
+# CA1815: Override equals and operator equals on value types
+dotnet_diagnostic.CA1815.severity = none
