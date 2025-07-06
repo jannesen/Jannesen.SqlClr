@@ -17,7 +17,7 @@
     <RepositoryUrl>https://github.com/jannesen/Jannesen.SqlClr</RepositoryUrl>
     <Authors>Peter Jannesen</Authors>
   </PropertyGroup>
-  
+
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
